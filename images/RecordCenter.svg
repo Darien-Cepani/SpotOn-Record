@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   height="195.58501"
+   width="1070.1925"
+   sodipodi:docname="RecordCenter.svg"
+   id="svg9"
+   version="1.1"
+   viewBox="0 0 1070.1925 195.58501">
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:current-layer="svg9"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="94.096"
+     inkscape:cx="500.638"
+     inkscape:zoom="1.0454995"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     id="namedview11"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">
+      .cls-1 {
+        fill: #fff;
+        font-size: 221px;
+        font-family: SteelfishOutline-Regular, Steelfish Outline;
+      }
+    </style>
+  </defs>
+  <text
+     inkscape:export-ydpi="96"
+     inkscape:export-xdpi="96"
+     y="193.59599"
+     x="-4.862"
+     style="fill:#ffffff"
+     class="cls-1"
+     data-name="RECORD CENTER."
+     id="RECORD_CENTER."><tspan
+       style="fill:#ffffff"
+       id="tspan6"
+       y="193.59599"
+       x="-4.862">RECORD CENTURY.</tspan></text>
+</svg>

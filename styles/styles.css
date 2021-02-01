@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #001010;
+}
+
+a {
+    font-weight: bold;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.grow:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.03);
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    filter: brightness(50%);
+}
+
+#packs {
+    margin: 5vh 0 20vh 0;
+}
+
+.navbar {
+    height: 20vh;
+}
+
+.nav-logo {
+    width: 150px;
+    margin-top: 1.7em;
+    margin-left: 5em;
+}
+
+.navbar-nav {
+    margin-right: 80px;
+    margin-top: 2em;
+}
+
+.nav-link {
+    margin: 0px 10px;
+    padding: 5px 25px;
+    border: 0px;
+    background: rgb(0, 129, 129);
+    color: black;
+}
+
+.nav-link:hover {
+    background: white;
+    color: black;
+}
+
+.button {
+    padding: 1em 2em;
+}
+
+.button:hover {
+    background: white;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.about {
+    text-align: center;
+    padding: 100px 250px;
+    line-height: 40px;
+}
+
+.footer {
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em 10px 0px 30px;
+}
+
+.ig-logo {
+    filter: invert(1);
+    width: 30px;
+    float: right;
+    margin-right: 30px;
+}
+
+.ig-logo:hover {
+    background: white;
+}
+
+.content-container {
+    width: 100%;
+    padding: 0vw 10vw;
+}
+
+.promos {
+    width: 100%;
+    padding: 0vw 15vw;
+}
+
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.intro-text {
+    color: rgb(233, 233, 233);
+}
+
+.text {
+    font-size: 8vw;
+    font-weight: bold;
+}
+
+.promo-header {
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 1em 0;
+}
+
+.hide {
+    background: black;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.about {
+    width: 100%;
+    padding: 17vh 5vw 23vh 5vw;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.about-head {
+    font-size: 60px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+}
+
+.youtube {
+    background: #00202088;
+    color: white;
+    margin: 0px;
+    border-radius: 10px;
+    margin-top: 20px
+}
+
+.spotify {
+    background: #00202088;
+    color: white;
+    margin: 0px;
+    border-radius: 10px;
+    margin-top: 20px
+}
+
+.soundCloud {
+    background: #00202088;
+    color: white;
+    margin: 0px;
+    border-radius: 10px;
+    margin-top: 20px
+}
+
+.content {
+    width: 100%;
+    height: 350px;
+}
+
+.footer {
+    height: 80px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 2em 10px 0px 30px;
+}
+
+.ig-logo {
+    filter: invert(1);
+    width: 30px;
+    float: right;
+    margin-right: 30px;
+}
+
+.card {
+    -webkit-perspective: 150rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 50vh;
+    background: transparent;
+}
+
+.card__side {
+    height: 50vh;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card__side--front {
+    background-color: white;
+}
+
+.card__side--front-1 {
+    background: #002020;
+}
+
+.card__side--front-2 {
+    background: #002020;
+}
+
+.card__side--front-3 {
+    background: #002020;
+}
+
+.card__side--back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.card__side--back-1 {
+    background: white;
+}
+
+.card__side--back-2 {
+    background: gold;
+}
+
+.card__side--back-3 {
+    background: darkturquoise;
+}
+
+.card:hover .card__side--front-1,
+.card:hover .card__side--front-2,
+.card:hover .card__side--front-3 {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card__side--back {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.card__title {
+    margin-top: 7em;
+    height: 10em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.card__title--1 .fa-paper-plane {
+    font-size: 5rem;
+    margin: 15px;
+    color: white;
+}
+
+.card__title--2 .fa-plane {
+    font-size: 5rem;
+    margin: 15px;
+    color: gold;
+}
+
+.card__title--3 .fa-rocket {
+    font-size: 5rem;
+    margin: 15px;
+    color: darkturquoise;
+}
+
+.card__heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    width: 75%;
+}
+
+.card__details h1 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em;
+    color: white;
+}
+
+.card__price-box {
+    text-align: center;
+    color: black;
+    margin-bottom: 8rem;
+}
+
+.card__price-only {
+    font-size: 2rem;
+    margin-top: 3em;
+    text-transform: uppercase;
+}
+
+.card__price-value {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.btn {
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em 0;
+    color: white;
+    border-radius: 0px;
+    background-color: black;
+}
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.row:not(:last-child) {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row [class^="col-"] {
+    float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+    margin-right: 6rem;
+}
+
+.row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3);
+}
+
+@media (max-width: 630px) {
+    video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: brightness(50%);
+    }
+    .hamburger-img {
+        position: absolute;
+        top: 5vh;
+        right: 10vw;
+        width: 5vw;
+    }
+    .navbar {
+        height: 11vh;
+        width: 100%;
+        background: #00252588;
+    }
+    .nav-logo {
+        height: auto;
+        width: 27vw;
+        position: absolute;
+        top: 0px;
+        margin-left: 1em;
+    }
+    .navbar-nav {
+        margin-right: 0vw;
+        margin-top: 8.5vh;
+        background-color: #00252588;
+        width: 100%;
+    }
+    .nav-link {
+        position: relative;
+        float: right;
+        margin: 3px 0px;
+        width: 100%;
+        padding: 5px 20px !important;
+    }
+    .heading {
+        color: white;
+        font-size: 25px;
+        padding: 60px 0px;
+        background: rgb(0, 0, 20);
+    }
+    .feed {
+        background-color: rgb(0, 0, 20);
+        padding-top: 30px;
+    }
+    .container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 60px 0px 0px 0px;
+        max-width: 100vw;
+        background-color: rgb(0, 0, 20) !important;
+    }
+    .row {
+        width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .row:not(:last-child) {
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+        width: 100%;
+    }
+    .row::after {
+        width: 100%;
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .row .col-1-of-3 {
+        width: 100%;
+        display: inline-block;
+        margin: 10px 0px;
+    }
+    .card__price-only {
+        font-size: 2rem;
+        margin-top: 2.5em;
+        text-transform: uppercase;
+    }
+    .card__price-box {
+        text-align: center;
+        color: black;
+        margin-bottom: 5rem;
+    }
+    .btn {
+        width: 100%;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1em 0;
+        color: white;
+        border-radius: 0px;
+        background-color: black;
+    }
+    .promos {
+        width: 100%;
+        padding: 0vw 0vw;
+    }
+    .promo-header {
+        font-size: 7vw;
+        font-weight: bold;
+        padding: 1em 0;
+    }
+    .content {
+        width: 100% !important;
+        height: 200px !important;
+        border-radius: 10px;
+    }
+    .footer {
+        height: 90px;
+        width: 100%;
+        padding: 2em 10px 0px 30px;
+    }
+    .ig-logo {
+        filter: invert(1);
+        width: 30px;
+        float: right;
+        margin-right: 30px;
+    }
+    .ig-logo:hover {
+        background: white;
+    }
+    .logo {
+        margin-top: 40px;
+        width: 40vw;
+    }
+    .content-container {
+        width: 100%;
+        padding: 0vw 2vw;
+    }
+    .container {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 85vh;
+        left: 48vw;
+    }
+    .intro {
+        background: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider {
+        background: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(100%);
+    }
+    .intro-text {
+        color: rgb(233, 233, 233);
+        font-size: 8vw;
+    }
+    .text {
+        font-size: 17vw;
+    }
+    .hide {
+        background: black;
+        overflow: hidden;
+    }
+    .hide span {
+        transform: translateY(100%);
+        display: inline-block;
+    }
+    .about {
+        width: 100%;
+        padding: 7vh 5vw 10vh 5vw;
+        text-align: center;
+        line-height: 30px;
+    }
+    .about-head {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    .about-content {
+        font-size: 18px;
+        color: white;
+    }
+    .youtube {
+        background: #00202088;
+        margin: 0px;
+        border-radius: 10px;
+        margin-top: 20px
+    }
+    .spotify {
+        background: #00202088;
+        margin: 0px;
+        border-radius: 10px;
+        margin-top: 20px
+    }
+    .soundCloud {
+        background: #00202088;
+        margin: 0px;
+        border-radius: 10px;
+        margin-top: 20px
+    }
+    .footer {
+        height: 80px;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        font-size: 20px;
+        padding: 1.5em 10px 1em 30px;
+    }
+    .ig-logo {
+        filter: invert(1);
+        width: 30px;
+        float: right;
+        margin-right: 30px;
+    }
+    .ig-logo:hover {
+        background: white;
+    }
+}
